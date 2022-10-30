@@ -1,3 +1,4 @@
+# python_selenium
 автотесты на selenium web driver
 
 
@@ -37,6 +38,9 @@
     "python.testing.pytestEnabled": true 
 }
 ```
+
+
+
 # Запустить дашборд с отчетами:
 1. Установить Allure Report:  
 **`brew install allure`**    # команда для Mac  
