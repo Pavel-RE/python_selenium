@@ -1,4 +1,3 @@
-# python_selenium
 автотесты на selenium web driver
 
 
@@ -28,37 +27,13 @@
 1) Из командной строки: 
 **`pytest test_product_view_sku`**
 2) Через VS Code. Пример файла с настройками:  
-**`{`**  
-**`"python.testing.pytestArgs": [`**  
-**`"tests",`**  
-**`"--alluredir=my_allure_results"`**   # настройка для сохранения отчетов  
-**`],`**  
-**`"python.testing.unittestEnabled": false,`**  
-**`"python.testing.pytestEnabled": true`**  
+```JSON
+{  
+    "python.testing.pytestArgs": [ 
+        "tests",
+        "--alluredir=my_allure_results"   # настройка для сохранения отчетов  
+        ],
+    "python.testing.unittestEnabled": false, 
+    "python.testing.pytestEnabled": true 
 }
-
-
-
-# Запустить дашборд с отчетами:
-1. Установить Allure Report:  
-**`brew install allure`**    # команда для Mac  
-**`sudo apt-add-repository ppa:qameta/allure`**   
-**`sudo apt-get update`**   
-**`sudo apt-get install allure`** # команды для Linux (Debian)    
-Для Windows нужно скачать
-  
-- В Windows находим в каталоге *allure\bin* файл *allure.bat* и запускаем на выполнение
-- На Linux/Mac выполняем файл рядом *./allure*
-
-2. Добавить каталог для хранения отчетов allure:  
-**`mkdir my_allure_results`**  
-
-3. Выполнить несколько тестов, которые есть в проекте. 
-
-4. Запустить сервер отчетов командой:  
-**`cd <путь до каталог allure\bin>`** 
-**`.\allure.bat`** 
-**`.\allure serve <путь до каталога с результатами>`** 
-
-**Пример итогового отчета:**
-![](http://reshetniak.ru/img2/allure_report.png)
+```
