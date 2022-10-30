@@ -1,2 +1,2 @@
-.env/*
-.my_allure_results/*
+/env*
+/my_allure_results*
